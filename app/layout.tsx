@@ -3,6 +3,7 @@ import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
 import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 import { GeistSans } from "geist/font/sans";
+import { signOutAction } from "@/app/actions";
 import { ThemeProvider } from "next-themes";
 import Link from "next/link";
 import "./globals.css";
@@ -105,7 +106,7 @@ export default function RootLayout({
                           </div>
 
                           <div className="p-2">
-                            <form method="POST" action="#">
+                            <form method="POST" action={signOutAction}>
                               <button
                                 type="submit"
                                 className="flex w-full items-center gap-2 rounded-lg px-4 py-2 text-sm text-red-700 hover:bg-red-50"
