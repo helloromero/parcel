@@ -37,8 +37,9 @@ export default function RootLayout({
           <main className="min-h-screen flex flex-col items-center">
             <div className="flex-1 w-full flex flex-col gap-20 items-center">
               <Header />
-              <div className="">{children}</div>
-
+              <h1>1</h1>
+              <div>{children}</div>
+              <h1>2</h1>
               <footer className="bg-gray-100 w-full">
                 <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
                   <div className="flex justify-center text-teal-600">

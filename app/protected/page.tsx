@@ -15,13 +15,7 @@ export default async function ProtectedPage() {
   }
 
   return (
-    <div className="flex-1 w-full flex flex-col gap-12 w-100">
-      {/* <div className="w-1/2">
-        <div className="bg-accent text-sm p-3 px-5 rounded-md text-foreground flex gap-3 items-center">
-          <InfoIcon size="16" strokeWidth={2} />
-          parcel's are private
-        </div>
-      </div> */}
+    <div className="">
       {/* <div className="flex flex-col gap-2 items-start">
         <h2 className="font-bold text-2xl mb-4">Your user details</h2>
         <pre className="text-xs font-mono p-3 rounded border max-h-32 overflow-auto w-100">
@@ -29,17 +23,9 @@ export default async function ProtectedPage() {
         </pre>
       </div> */}
 
-      {/*
-  Heads up! 👋
-
-  Plugins:
-    - @tailwindcss/forms
-*/}
-
-      <div className="relative rounded-lg border border-gray-100 ">
+      <div className="relative rounded-lg border border-gray-100 gap-12">
         <label htmlFor="Search" className="sr-only">
-          {" "}
-          Search{" "}
+          Search
         </label>
 
         <input
@@ -85,13 +71,13 @@ export default async function ProtectedPage() {
               </h3>
             </div>
 
-            {/* <div className="hidden sm:block sm:shrink-0">
+            <div className="hidden sm:block sm:shrink-0">
               <img
                 alt=""
                 src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                className="size-16 rounded-lg object-cover shadow-sm"
+                className="size-10 rounded-lg object-cover shadow-sm"
               />
-            </div> */}
+            </div>
           </div>
 
           <div className="mt-4">
@@ -128,13 +114,13 @@ export default async function ProtectedPage() {
               </h3>
             </div>
 
-            {/* <div className="hidden sm:block sm:shrink-0">
+            <div className="hidden sm:block sm:shrink-0">
               <img
                 alt=""
                 src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
                 className="size-16 rounded-lg object-cover shadow-sm"
               />
-            </div> */}
+            </div>
           </div>
 
           <div className="mt-4">

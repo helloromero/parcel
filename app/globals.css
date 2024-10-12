@@ -84,3 +84,10 @@
 .parcel-yellow-border {
   border: 1px solid #ffc93c;
 }
+
+.parcel-wrapper {
+  background-color: tomato;
+  max-width: 1280px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
