@@ -67,3 +67,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+.parcel-btn {
+  width: 100%;
+  max-width: 200px;
+}
+
+.parcel-yellow {
+  color: #ffc93c;
+}
+
+.parcel-yellow-bg {
+  background-color: #ffc93c;
+}
+
+.parcel-yellow-border {
+  border: 1px solid #ffc93c;
+}
