@@ -18,7 +18,7 @@ export default function ForgotPassword({
           <p className="text-sm text-secondary-foreground">
             Already have an account?{" "}
             <Link className="text-primary underline" href="/sign-in">
-              Sign in
+              Sign in 4
             </Link>
           </p>
         </div>
@@ -26,7 +26,7 @@ export default function ForgotPassword({
           <Label htmlFor="email">Email</Label>
           <Input name="email" placeholder="you@example.com" required />
           <SubmitButton formAction={forgotPasswordAction}>
-            Reset Password
+            <span> Reset Password</span>
           </SubmitButton>
           <FormMessage message={searchParams} />
         </div>

@@ -2,6 +2,7 @@ import FetchDataSteps from "@/components/tutorial/fetch-data-steps";
 import { createClient } from "@/utils/supabase/server";
 import { InfoIcon } from "lucide-react";
 import { redirect } from "next/navigation";
+import Sidenav from "../../components/parcel/Sidenav";
 
 export default async function ProtectedPage() {
   const supabase = createClient();
@@ -17,136 +18,9 @@ export default async function ProtectedPage() {
   return (
     <div className="min-w-full">
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-[300px_1fr] lg:gap-8">
+        <Sidenav />
         <div className="">
-          <ul className="space-y-1">
-            <li>
-              <a
-                href="#"
-                className="flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-5 opacity-75"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-
-                <span className="text-sm font-medium"> General </span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-5 opacity-75"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-
-                <span className="text-sm font-medium"> Teams </span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-5 opacity-75"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
-                  />
-                </svg>
-
-                <span className="text-sm font-medium"> Billing </span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-5 opacity-75"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                  />
-                </svg>
-
-                <span className="text-sm font-medium"> Invoices </span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                className="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-5 opacity-75"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
-
-                <span className="text-sm font-medium"> Account </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="">
-          <div className="relative rounded-lg border border-gray-100 gap-12 ">
+          <div className="relative  border border-gray-100 gap-12 ">
             <label htmlFor="Search" className="sr-only">
               Search
             </label>
@@ -155,7 +29,7 @@ export default async function ProtectedPage() {
               type="text"
               id="Search"
               placeholder="Search ya bookmarks..."
-              className="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm p-4 bg-white"
+              className="flex h-10 w-full  border border-input bg-background px-3 py-2 text-sm"
             />
 
             <span className="absolute inset-y-0 end-0 grid w-10 place-content-center">
@@ -185,7 +59,7 @@ export default async function ProtectedPage() {
           {Array.from({ length: 100 }).map((_, index) => (
             <a
               href="#"
-              className="relative block overflow-hidden rounded-lg border border-gray-100 w-full p-6 mt-6"
+              className="relative block overflow-hidden  border border-gray-100 w-full p-6 mt-6"
             >
               <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
 
@@ -226,10 +100,20 @@ export default async function ProtectedPage() {
               <dl className="mt-6 flex gap-4 sm:gap-6">
                 <div className="flex gap-4">
                   <dt className="text-sm font-medium text-gray-600">
-                    for_crony
+                    <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      for_crony
+                    </span>
                   </dt>
-                  <dt className="text-sm font-medium text-gray-600">tech</dt>
-                  <dt className="text-sm font-medium text-gray-600">inspo</dt>
+                  <dt className="text-sm font-medium text-gray-600">
+                    <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      ideas
+                    </span>
+                  </dt>
+                  <dt className="text-sm font-medium text-gray-600">
+                    <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                      design_inspo
+                    </span>
+                  </dt>
                 </div>
               </dl>
             </a>

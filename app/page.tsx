@@ -28,11 +28,14 @@ export default async function Index() {
           </h1>
 
           <p className="mt-4 sm:text-xl/relaxed">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-            illo tenetur fuga ducimus numquam ea!
+            Parcel is a fast, privacy-first bookmarking service with no ads or
+            third-party tracking. Save bookmarks from any browser, and for a
+            small annual fee, upgrade to premium for full-text search,
+            archiving, and broken link checking. Try Parcel today to keep your
+            online world organised!
           </p>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
+          {/* <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
               className="block w-full rounded bg-red-600 px-12 py-3 text-sm font-medium text-white shadow focus:outline-none focus:ring parcel-yellow-bg parcel-btn"
               href="/sign-in"
@@ -45,6 +48,24 @@ export default async function Index() {
               href="/sign-in"
             >
               Login
+            </a>
+          </div> */}
+
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a className="" href="/sign-up">
+              {/* <span className="absolute inset-0 translate-x-0 translate-y-0 bg-yellow-300 transition-transform group-hover:translate-x-1.5 group-hover:translate-y-1.5"></span> */}
+
+              <span className="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest">
+                Get Started
+              </span>
+            </a>
+
+            <a className="" href="/sign-in">
+              {/* <span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-yellow-300 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span> */}
+
+              <span className="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-black group-active:text-opacity-75 parcel-yellow-bg">
+                Login
+              </span>
             </a>
           </div>
         </div>

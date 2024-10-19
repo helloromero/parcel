@@ -21,7 +21,7 @@ export default function Signup({ searchParams }: { searchParams: Message }) {
         <p className="text-sm text text-foreground">
           Already have an account?{" "}
           <Link className="text-primary font-medium underline" href="/sign-in">
-            Sign in
+            Sign in 2
           </Link>
         </p>
         <div className="flex flex-col gap-2 [&>input]:mb-3 mt-8">
@@ -36,7 +36,7 @@ export default function Signup({ searchParams }: { searchParams: Message }) {
             required
           />
           <SubmitButton formAction={signUpAction} pendingText="Signing up...">
-            Sign up
+            <span>Sign up</span>
           </SubmitButton>
           <FormMessage message={searchParams} />
         </div>
